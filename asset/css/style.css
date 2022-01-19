@@ -101,12 +101,21 @@ main .container .portfolio .portfolio-contain .row {
 main .container .portfolio .portfolio-contain .row .items {
     width: 24%;
     height: 500px;
+    cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+}
+
+main .container .portfolio .portfolio-contain .row .items:hover {
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
 }
 
 main .container .portfolio .portfolio-contain .row .item {
