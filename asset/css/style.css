@@ -16,7 +16,6 @@
 /* header section style */
 
 header .header-contain {
-    height: 100vh;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -60,11 +59,11 @@ header .header-contain .description .description-contain :nth-child(3) {
 /* main section style */
 main .container {
     width: 90%;
-    min-height: 100vh;
     margin: 0 auto;
 }
 
 main .container .portfolio {
+    margin-top: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +74,7 @@ main .container .portfolio {
 main .container .portfolio .title {
     font-size: 50px;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 
@@ -83,6 +82,7 @@ main .container .portfolio .title {
 main .container .portfolio .portfolio-contain {
     width: 100%;
     height: auto;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -120,7 +120,8 @@ main .container .portfolio .portfolio-contain .row .item {
 }
 
 main .container .portfolio .portfolio-contain .row .items h1 {
-    margin: 10px 5px;
+    margin: 15px 0px 5px;
+    line-height: 27px;
     text-align: center;
 }
 
@@ -151,7 +152,7 @@ main .container .portfolio .portfolio-contain .row .items .btn:hover {
     background: orange;
 }
 
-
+/**************************** Row 1 item img *************************/
 main .container .portfolio .portfolio-contain .row .projet1 {
     background-image: url('../../asset/img/projet1.png');
     border-top-right-radius: 20px;
@@ -183,31 +184,42 @@ main .container .portfolio .portfolio-contain .row .projet4 {
 
 }
 
-/*
+/**************************** Row 2 item img *************************/
 main .container .portfolio .portfolio-contain .row .projet5 {
-    background-image: url('../../asset/img/De-Yves-DION.png');
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
+    background-image: url('../../asset/img/projet5.png');
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
 }
 
 main .container .portfolio .portfolio-contain .row .projet6 {
-    background-image: url('../../asset/img/De-Yves-DION.png');
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
+    background-image: url('../../asset/img/projet6.png');
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
 }
 
 main .container .portfolio .portfolio-contain .row .projet7 {
-    background-image: url('../../asset/img/De-Yves-DION.png');
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
+    background-image: url('../../asset/img/projet7.png');
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
 }
 
 main .container .portfolio .portfolio-contain .row .projet8 {
-    background-image: url('../../asset/img/De-Yves-DION.png');
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-} */
+    background-image: url('../../asset/img/projet8.png');
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+/*********************** Education *********************/
+main .education {
+    margin: 60px 0;
+}
+
+main .education .education-contain .education-title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
