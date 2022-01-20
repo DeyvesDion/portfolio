@@ -15,6 +15,72 @@
 
 /* header section style */
 
+
+/* overlay section style */
+
+
+header .overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1099;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+header .overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+header .overlay .popupBox {
+    position: absolute;
+    width: 759px;
+    height: 435px;
+    left: 50%;
+    top: 51%;
+    display: flex;
+    flex-direction: row;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #00000055;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.popupTxt .closeBtnDesktop {
+    position: fixed;
+    height: 38px;
+    width: 38px;
+    top: 8px;
+    right: 10px;
+    border: 1px solid gray;
+    padding: 18px;
+    cursor: pointer;
+    background: transparent url('../../asset/img/icon-close-desktop.svg');
+}
+
+header .overlay .popupBox .popupTxt {
+    position: relative;
+    width: 100%;
+    padding: 100px;
+}
+
+header .overlay .popupBox .popupTxt .btnDownload {
+    margin-top: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+
 header .header-contain {
     padding-top: 100px;
     display: flex;
@@ -328,7 +394,17 @@ main .education .education-contain .education-title {
     border-radius: 6px;
 }
 
+.timeline .content :hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
+
 @media screen and (max-width: 600px) {
 
     /* Place the timelime to the left */
@@ -367,8 +443,6 @@ main .education .education-contain .education-title {
     }
 }
 
-
-
 /* Media Query */
 
 /* flex: 1 1 90%; */
@@ -385,5 +459,9 @@ main .education .education-contain .education-title {
 
     header .header-contain .img-responsive {
         width: 250px;
+    }
+
+    .overlay {
+        display: none;
     }
 }
