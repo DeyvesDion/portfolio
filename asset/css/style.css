@@ -82,28 +82,41 @@ header .overlay .popupBox .popupTxt .btnDownload {
 
 
 header .header-contain {
-    padding-top: 100px;
+    /* padding-top: 100px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-header .header-contain .img-responsive {
-    width: 300px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+/* header .header-contain .img-responsive {
+    width: 100%;
+    height: 700px;
+} */
+
+header .header-contain .description {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../asset/img/header.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 header .header-contain .description .description-contain {
     text-align: center;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 50px;
+    background-color: rgba(233, 231, 231, 0.473);
 }
 
 .skill {
@@ -111,7 +124,7 @@ header .header-contain .description .description-contain {
 }
 
 header .header-contain .description .description-contain :nth-child(1) {
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 header .header-contain .description .description-contain :nth-child(2) {
