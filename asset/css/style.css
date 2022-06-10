@@ -102,6 +102,24 @@ header .header-contain .description {
     text-align: center;
 }
 
+.description-contain h1 {
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.description-contain h2 {
+    font-size: 30px;
+}
+
+.description-contain address {
+    font-size: 22px;
+}
+
+.description-contain p {
+    font-weight: bold;
+    font-size: 22px;
+}
+
 header .header-contain .description .description-contain {
     text-align: center;
     cursor: pointer;
@@ -133,8 +151,9 @@ header .header-contain .description .description-contain :nth-child(3) {
 }
 
 /* main section style */
+
 main .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -145,6 +164,16 @@ main .container .portfolio {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+
+}
+
+.portfolio {
+    background-color: whitesmoke;
+}
+
+.portfolio .portfolio-wrapper {
+    width: 90%;
+    /* margin: 0 auto; */
 }
 
 main .container .portfolio .title {
@@ -152,9 +181,8 @@ main .container .portfolio .title {
     font-weight: bold;
     margin-bottom: 0px;
     margin-top: 60px;
+    text-align: center;
 }
-
-
 
 main .container .portfolio .portfolio-contain {
     width: 100%;
@@ -237,6 +265,10 @@ main .container .portfolio .portfolio-contain .row .items .btn {
 main .container .portfolio .portfolio-contain .row .items .btn:hover {
     color: #FFF;
     background: orange;
+}
+
+main .container .portfolio .portfolio-contain .row .items {
+    background-color: white;
 }
 
 /**************************** Row 1 item img *************************/
@@ -414,6 +446,12 @@ main .education .education-contain .education-title {
     -o-transform: scale(1.01);
 }
 
+footer {
+    background-color: whitesmoke;
+    margin-top: 60px;
+    padding: 15px 0;
+}
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
 @media screen and (max-width: 600px) {
@@ -458,6 +496,7 @@ main .education .education-contain .education-title {
 
 /* flex: 1 1 90%; */
 /* flex: 2 1 150px; */
+
 @media screen and (max-width: 1020px) {
     main .container .portfolio .portfolio-contain .row .items {
         flex: 2 1 47%;
@@ -474,5 +513,29 @@ main .education .education-contain .education-title {
 
     .overlay {
         display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .header-contain .description {
+        height: auto !important;
+    }
+
+    .description-contain h2 {
+        font-weight: bold;
+    }
+
+    .description-contain address {
+        font-weight: bold;
+    }
+
+    .description-contain address a {
+        font-weight: bold;
+    }
+
+    header .header-contain .description .description-contain {
+        text-align: center;
+        padding: 50px 20px;
+        /* margin-top: 100px; */
     }
 }
