@@ -521,23 +521,12 @@ footer {
         height: auto !important;
     }
 
-    .description-contain h1 {
-        font-size: 20px
-    }
-
-    .description-contain h2 {
-        /* font-weight: bold; */
-        font-size: 20px
-    }
-
+    .description-contain h1,
+    .description-contain h2,
     .description-contain address {
-        /* font-weight: bold; */
         font-size: 20px
     }
 
-    .description-contain address a {
-        /* font-weight: bold; */
-    }
 
     header .header-contain .description .description-contain {
         text-align: center;
