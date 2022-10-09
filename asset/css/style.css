@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 /* Reset all style */
 * {
@@ -14,445 +16,541 @@
 }
 
 /* header section style */
-
-
-/* overlay section style */
-
-
-header .overlay {
+/* NavBar Style */
+header {
     position: fixed;
-    height: 100%;
+    top: 0;
+    left: 0;
     width: 100%;
-    visibility: hidden;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1099;
-    transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
+    height: 77px;
+    align-items: center;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    transition: 1.5s;
+    z-index: 1000;
 }
 
-header .overlay.show {
-    visibility: visible;
-    opacity: 1;
+header .logo {
+    color: #000;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Silkscreen',
+        cursive;
 }
 
-header .overlay .popupBox {
-    position: absolute;
-    width: 759px;
-    height: 435px;
-    left: 50%;
-    top: 51%;
+header ul {
+    width: 60%;
+    position: relative;
     display: flex;
     flex-direction: row;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 0px 20px #00000055;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: space-around;
 }
 
-.popupTxt .closeBtnDesktop {
-    position: fixed;
-    height: 38px;
-    width: 38px;
-    top: 8px;
-    right: 10px;
-    border: 1px solid gray;
-    padding: 18px;
-    cursor: pointer;
-    background: transparent url('../../asset/img/icon-close-desktop.svg');
+header ul a {
+    color: #000;
+    font-weight: bold;
+    line-height: 1;
+    background: linear-gradient(0deg, #6a5acd, slateblue) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
 }
 
-header .overlay .popupBox .popupTxt {
+header ul a:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+}
+
+header.sticky {
+    background-color: #000;
+    box-shadow: 0 5px 20px #6a5acd;
+}
+
+header.sticky a {
+    color: #fff;
+}
+
+/* Banner section style */
+main .container .banner {
     position: relative;
     width: 100%;
-    padding: 100px;
-}
-
-header .overlay .popupBox .popupTxt .btnDownload {
-    margin-top: 20px;
-    padding: 5px 20px;
-    cursor: pointer;
-}
-
-
-header .header-contain {
-    /* padding-top: 100px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-header .header-contain .description {
-    width: 100%;
     height: 100vh;
-    background-image: url('../../asset/img/header.png');
-    background-size: cover;
-    background-position: center center;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
+    /* background-color: #000; */
+}
+
+.banner .banner-txt {
+    color: #000;
     text-align: center;
 }
 
-.description-contain h1 {
-    font-weight: bold;
-    font-size: 42px;
+.banner .banner-txt h1 {
+    font-size: 45px;
 }
 
-.description-contain h2 {
-    font-size: 30px;
-}
 
-.description-contain address {
-    font-size: 22px;
-}
-
-.description-contain p {
-    font-weight: bold;
-    font-size: 22px;
-}
-
-header .header-contain .description .description-contain {
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 100px 50px;
-    background-color: rgba(233, 231, 231, 0.473);
-}
-
-.skill {
-    font-weight: bold;
-}
-
-/* header .header-contain .description .description-contain :nth-child(1) {
-    
-} */
-
-header .header-contain .description .description-contain :nth-child(2) {
-    margin: 10px;
-    /* font-weight: 500; */
-
-}
-
-header .header-contain .description .description-contain :nth-child(3) {
-    margin: 10px;
-}
-
-/* main section style */
-
-main .container {
-    width: 100%;
-    margin: 0 auto;
-}
-
-main .container .portfolio {
-    margin-top: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-
-}
-
-.portfolio {
-    background-color: whitesmoke;
-}
-
-.portfolio .portfolio-wrapper {
-    width: 90%;
-    /* margin: 0 auto; */
-}
-
-main .container .portfolio .title {
+.banner .banner-txt h2 span {
+    color: #6a5acd;
     font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 0px;
-    margin-top: 60px;
-    text-align: center;
 }
 
-main .container .portfolio .portfolio-contain {
+.banner .neumorphism {
+    z-index: -1;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 161px;
+    right: 109px;
+    transform: rotate(70deg);
+    border-radius: 50px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 20px 20px 60px #d9d9d9,
+        -20px -20px 60px #ffffff;
+}
+
+.banner .neumorphism2 {
+    z-index: -1;
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    top: 200px;
+    left: 109px;
+    transform: rotate(45deg);
+    border-radius: 80px;
+    background: #ffffff;
+    box-shadow: -20px 20px 60px #d9d9d9, 20px -20px 60px #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+}
+
+.banner .neumorphism3 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 350px;
+    right: 209px;
+    transform: rotate(70deg);
+    border-radius: 50%;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 20px 20px 60px #d9d9d9,
+        -20px -20px 60px #6a5acd;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+main .container .banner .handwritten {
+    z-index: -1;
+    position: absolute;
+    color: #6a5acd;
+    font-family: 'Dancing Script',
+        cursive;
+    font-size: 30px;
+    top: 450px;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    background-size: 120px;
+    background-image: url(../img/primary-circle.svg);
+}
+
+
+/* Télécharger mon CV Btn */
+.cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cv-btn {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    color: #6a5acd;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.cv-btn:after {
+    content: "";
+    background-color: #D9D3E4;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.cv-btn:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+@media (min-width: 768px) {
+    .cv-btn {
+        padding: 13px 50px 13px;
+    }
+}
+
+.cv .cv-btn span {
+    position: relative;
+    left: 6px;
+    top: 4px;
+}
+
+/* Réalisation section style */
+main .realisation {
+    height: auto;
+    width: 100%;
+    padding-top: 80px;
+    /* padding: 80px 0; */
+}
+
+main .realisation .title {
+    text-align: center;
+    font-size: 50px;
+    color: #6a5acd;
+}
+
+main .realisation .title::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: 50%/contain url(../img/primary-down.svg) no-repeat;
+}
+
+main .realisation .container {
     width: 100%;
     height: auto;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
 }
 
-main .container .portfolio .portfolio-contain .row {
-    width: 100%;
-    margin-bottom: 30px;
+main .realisation .container .row {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-main .container .portfolio .portfolio-contain .row .items {
-    width: 24%;
-    height: 500px;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+main .realisation .container .row .card {
+    width: 250px;
+    height: 350px;
     border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    background: rgb(90, 120, 205);
+    background: linear-gradient(71deg, rgba(90, 120, 205, 0.23339758266587884) 0%, rgba(255, 88, 60, 0.5779353977919293) 99%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
 
-main .container .portfolio .portfolio-contain .row .items:hover {
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    -o-transform: scale(1.02);
+.row .card:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
 }
 
-main .container .portfolio .portfolio-contain .row .item {
+.row .card h1 {
+    font-size: 22px;
+    color: #6a5acd;
+    margin-bottom: 15px;
+}
+
+.row .card p {
+    font-size: 15px;
+}
+
+.row .card .btn {
+    color: #ff7e3c;
+    border: 1px solid #ff7e3c;
+    border-radius: 20px;
+    padding: 9px 40px;
+    cursor: pointer;
+    background-color: hsl(0deg 0% 100% / 23%);
+    -webkit-backdrop-filter: blur(.8rem);
+    backdrop-filter: blur(0.8rem);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.row .card .btn:hover {
+    color: #6a5acd;
+    background-color: rgba(255, 255, 255, 0.32);
+    -webkit-backdrop-filter: blur(.8rem);
+    backdrop-filter: blur(0.8rem);
+}
+
+
+/* Expérience Pro contain style */
+
+main .experience {
     width: 100%;
-    height: 200px;
-    cursor: pointer;
-    background-position: center;
-    background-size: cover;
-
-    /* width: 250px; */
+    padding-top: 80px;
+    height: auto;
 }
 
-main .container .portfolio .portfolio-contain .row .items h1 {
-    margin: 15px 0px 5px;
-    line-height: 27px;
+main .experience .title {
     text-align: center;
-}
-
-main .container .portfolio .portfolio-contain .row .items .description {
-    margin: 10px 3px;
-    text-align: center;
-}
-
-main .container .portfolio .portfolio-contain .row .items .btn {
-    margin-top: 20px;
-    border-radius: 25px;
-    color: #000;
-    text-align: center;
-    width: 70%;
-    height: 40px;
-    padding: 8px 20px;
-    margin: 0 auto;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    cursor: pointer;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-}
-
-main .container .portfolio .portfolio-contain .row .items .btn:hover {
-    color: #FFF;
-    background: orange;
-}
-
-main .container .portfolio .portfolio-contain .row .items {
-    background-color: white;
-}
-
-/**************************** Row 1 item img *************************/
-main .container .portfolio .portfolio-contain .row .projet1 {
-    background-image: url('../../asset/img/projet1.png');
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-
-}
-
-
-main .container .portfolio .portfolio-contain .row .projet2 {
-    background-image: url('../../asset/img/projet2.png');
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-
-}
-
-
-
-main .container .portfolio .portfolio-contain .row .projet3 {
-    background-image: url('../../asset/img/pokedex.jpg');
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-
-}
-
-main .container .portfolio .portfolio-contain .row .projet4 {
-    background-image: url('../../asset/img/projet4.png');
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-
-}
-
-/**************************** Row 2 item img *************************/
-main .container .portfolio .portfolio-contain .row .projet5 {
-    background-image: url('../../asset/img/projet5.png');
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-
-}
-
-main .container .portfolio .portfolio-contain .row .projet6 {
-    background-image: url('../../asset/img/projet6.png');
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-
-}
-
-main .container .portfolio .portfolio-contain .row .projet7 {
-    background-image: url('../../asset/img/projet7.png');
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-
-}
-
-main .container .portfolio .portfolio-contain .row .projet8 {
-    background-image: url('../../asset/img/projet8.png');
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-
-}
-
-/*********************** Education *********************/
-
-main .education .education-contain .education-title {
     font-size: 50px;
-    font-weight: bold;
-    text-align: center;
+    color: #6a5acd;
 }
 
+main .experience .title::after {
+    content: "";
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    background: 50%/contain url(../img/Lunette.gif) no-repeat;
+}
 
+main .experience .container {
+    width: 100%;
+    height: auto;
+}
 
-/************************* Time Line ************************/
+/******Time Line Style **************/
+.timeline-section {
+    min-height: 100vh;
+    padding: 50px 15px;
+}
 
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
+.timeline-items {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
+.timeline-items::before {
     content: '';
     position: absolute;
-    width: 6px;
-    background-color: rgb(175, 172, 172);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
+    width: 2px;
+    height: 100%;
+    background-color: #6a5acd;
+    left: calc(50% - 1px);
 }
 
-/* Container around content */
-.timeline .container {
-    padding: 10px 40px;
+.timeline-item {
+    margin-bottom: 40px;
+    width: 100%;
     position: relative;
-    background-color: inherit;
-    width: 50%;
 }
 
-/* The circles on the timeline */
-.timeline .container::after {
-    content: '';
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+    height: 16px;
+    width: 16px;
+    background-color: #eaa023;
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #FF9F55;
-    top: 15px;
+    left: calc(50% - 8px);
     border-radius: 50%;
-    z-index: 1;
+    top: 10px;
 }
 
-/* Place the container to the left */
-.timeline .left {
-    left: -25%;
+.timeline-date {
+    font-size: 18px;
+    color: #eaa023;
+    margin: 6px 0 15px;
 }
 
-/* Place the container to the right */
-.timeline .right {
-    left: 25%;
+.timeline-content {
+    background: rgb(90, 120, 205);
+    background: linear-gradient(71deg, rgba(90, 120, 205, 0.23339758266587884) 0%, rgba(255, 88, 60, 0.5779353977919293) 99%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 30px;
+    border-radius: 5px;
 }
 
-/* Add arrows to the left container (pointing right) */
-.timeline .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent rgb(252, 248, 248);
+.timeline-content:hover {
+    transform: scale(1.03);
 }
 
-/* Add arrows to the right container (pointing left) */
-.timeline .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent rgb(252, 248, 248) transparent transparent;
+.timeline-content h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    font-weight: 700;
 }
 
-/* Fix the circle for containers on the right side */
-.timeline .right::after {
-    left: -16px;
+.timeline-content p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+    /* justify-content: justify; */
+    line-height: 22px;
 }
 
-/* The actual content */
-.timeline .content {
-    padding: 20px 30px;
-    background-color: rgb(252, 248, 248);
+/* responsive */
+@media(max-width: 767px) {
+    .timeline-items::before {
+        left: 7px;
+    }
+
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+
+    .timeline-dot {
+        left: 0;
+    }
+}
+
+/******Time Line End **************/
+
+
+/* Services contain style */
+
+main .service {
+    width: 100%;
+    padding-top: 80px;
+    height: auto;
+}
+
+main .service .title {
     position: relative;
-    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 50px;
+    color: #6a5acd;
 }
 
-.timeline .content :hover {
-    cursor: pointer;
-    transform: scale(1.01);
-    -webkit-transform: scale(1.01);
-    -moz-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    -o-transform: scale(1.01);
+main .service .title::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    width: 105px;
+    height: 105px;
+    background: 50%/contain url(../img/Calculatrice.gif) no-repeat;
 }
 
-footer {
-    background-color: whitesmoke;
-    margin-top: 60px;
-    padding: 15px 0;
+main .service .container {
+    width: 100%;
+    height: auto;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
+main .service .container .row {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.service .container .row .service-contain {
+    height: 200px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(90, 120, 205);
+    background: linear-gradient(71deg, rgba(90, 120, 205, 0.23339758266587884) 0%, rgba(255, 88, 60, 0.5779353977919293) 99%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.service .container .row .service-contain:hover {
+    transform: scale(1.03);
+}
+
+.service .container .row .service-contain h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.service .container .row .service-contain p {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: justify !important;
+}
+
+/* Formation contain style */
+
+main .formation {
+    width: 100%;
+    padding: 80px 0;
+    height: auto;
+}
+
+main .formation .title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 50px;
+    color: #6a5acd;
+}
+
+main .formation .title::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    width: 105px;
+    height: 105px;
+    background: 50%/contain url(../img/diplome.gif) no-repeat;
+}
+
+main .formation .container {
+    width: 100%;
+    height: auto;
+}
 
 @media screen and (max-width: 600px) {
 

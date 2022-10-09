@@ -2,8 +2,21 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="De Yves DION developpeur Front JavaScript Angular - VueJs - Webmaster - Intégrateur portfolio"
+        />
+        <meta
+            name="keywords"
+            content="HTML, CSS, JavaScript, Angular, VueJs, Webmaster, Intégrateur, Front"
+        />
+        <meta name="author" content="De Yves DION" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
         <link rel="stylesheet" href="./asset/css/style.css" />
         <title>
             PortFolio De Yves DION | Développeur VueJs - Angular / Intégrateur
@@ -44,378 +57,411 @@
         <!------------------------- Google Analytics  ------------------------->
     </head>
     <body>
-        <!---------------------------------------- header --------------------------------->
+        <!------------------------------------------ Header ----------------------------------------->
         <header>
-            <div class="overlay">
-                <div class="popupBox">
-                    <div class="popupTxt">
-                        <div class="closeBtnDesktop"></div>
-                        <div class="txtBox">
-                            <h1 class="title">
-                                Bonjour,<br />
-                                bienvenue sur mon portfolio
-                            </h1>
-                            <button
-                                title="Télécharger mon CV Français"
-                                class="btnDownload"
-                                type="submit"
-                            >
-                                <a
-                                    href="https://drive.google.com/file/d/1s67Uwqx848fYgv8wk9VsF6CHiTUiRdFn/view?usp=sharing"
-                                    >Mon CV version 🇫🇷</a
-                                >
-                            </button>
-                            <button
-                                title="Télécharger mon CV Canadien"
-                                class="btnDownload"
-                                type="submit"
-                            >
-                                <a
-                                    href="https://drive.google.com/file/d/1s67Uwqx848fYgv8wk9VsF6CHiTUiRdFn/view?usp=sharing"
-                                    >Mon CV version 🇨🇦</a
-                                >
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <div class="logoSection">
+                <a href="/" class="logo">De Yves DION</a>
             </div>
-            <div class="header-contain">
-                <div class="description">
-                    <div class="description-contain">
-                        <h1 class="hello">Bonjour, je suis De Yves DION</h1>
-                        <h2>
-                            Développeur Front Angular - VueJs | Intégrateur
-                            WordPress
-                        </h2>
-                        <address>
-                            deyvesdion@gmail.com | 033 7 53 39 98 14 | Région
-                            Parisienne <br />
-                            <a href="https://www.linkedin.com/in/de-yves-dion/"
-                                >LinkedIn : De Yves DION</a
-                            >
-                            |
-                            <a href="https://github.com/DeyvesDion"
-                                >GitHub : DeyvesDION</a
-                            >
-                            |
-                            <a
-                                href="https://drive.google.com/file/d/1s67Uwqx848fYgv8wk9VsF6CHiTUiRdFn/view?usp=sharing"
-                                >Mon CV</a
-                            >
-                        </address>
-                        <h3 class="skills" style="text-align: center"></h3>
-                        <span class="skill">Mes skills :</span>
-                        <p>
-                            <br />Html5/Css3 - Javascript - jQuery - Bootstrap
-                            -WordPress - Vue.js - Angular - <br />Nuxt.js -
-                            Gridsome - Sass - UML - FireBase - MySQL
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="menu">
+                <li class="nav-item">
+                    <a href="/">Accueil &nbsp</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#realisation">Réalisations &nbsp</a>
+                </li>
+                <li class="navItem">
+                    <a href="#experience">Expérience Pro &nbsp</a>
+                </li>
+                <li class="navItem">
+                    <a href="#service">Services &nbsp</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#formation">Formations &nbsp</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact">Contact &nbsp</a>
+                </li>
+            </ul>
         </header>
+
         <!---------------------------------------- portfolio --------------------------------->
         <main>
             <div class="container">
-                <div class="portfolio">
-                    <div class="portfolio-wrapper">
-                        <h1 class="title">Réalisations</h1>
-                        <p
-                            style="
-                                text-align: center;
-                                margin: 30px 0px;
-                                line-height: 40px;
-                            "
+                <!-- Banner contain -->
+                <div class="banner">
+                    <div class="banner-txt">
+                        <h1>Bonjour, je suis <span>De Yves DION</span></h1>
+                        <h2><span class="auto-type"></span></h2>
+                    </div>
+                    <div class="neumorphism"></div>
+                    <div class="neumorphism2"></div>
+                    <div class="neumorphism3"></div>
+                    <p class="handwritten">A l'écoute du marché</p>
+                    <div class="cv">
+                        <a
+                            class="cv-btn"
+                            target="_blank"
+                            href="https://drive.google.com/file/d/1s67Uwqx848fYgv8wk9VsF6CHiTUiRdFn/view?usp=sharing"
                         >
-                            Pour voir +22 projets, visitez mon profil
-                            <a href="https://github.com/DeyvesDion"
-                                >GitHub : DeyvesDION</a
-                            >
-                            ou mon profil
-                            <a href="https://www.linkedin.com/in/de-yves-dion/"
-                                >LinkedIn : De Yves DION</a
-                            >
-                        </p>
-                        <div class="portfolio-contain">
-                            <!---------------------------------------- row 1 --------------------------------->
-                            <div class="row">
-                                <div class="items">
-                                    <div class="item projet1"></div>
-                                    <h1>Aasgard</h1>
-                                    <p class="description">
-                                        Site internet du vendeur de poël Aasgard
-                                        (En cours)
-                                        <br /><br />
-                                        <span class="skill">Stacks : </span>
-                                        Html/Css - JavaScript
-                                    </p>
-                                    <br /><br /><br />
-                                    <h4 class="btn">
-                                        <a
-                                            href="https://deyvesdion-aasgard.netlify.app/"
-                                            >Voir plus ...</a
-                                        >
-                                    </h4>
-                                </div>
-                                <div class="items">
-                                    <div class="item projet7"></div>
-                                    <h1>Festival de pein air</h1>
-                                    <p class="description">
-                                        Site internet du festival de pein air,
-                                        organisé au parc Monceau à Paris.
-                                        <br /><br />
-                                        <span class="skill">Stacks : </span>
-                                        Bootstrap
-                                    </p>
-                                    <br />
-                                    <h4 class="btn">
-                                        <a
-                                            href="https://deyvesdion-festival-de-film.netlify.app/"
-                                            >Voir plus ...</a
-                                        >
-                                    </h4>
-                                </div>
+                            <span class="material-symbols-outlined">
+                                download
+                            </span>
+                            Mon CV
+                        </a>
+                    </div>
+                </div>
 
-                                <div class="items">
-                                    <div class="item projet3"></div>
-                                    <h1>Pokedex</h1>
-                                    <p class="description">
-                                        Liste des pokémons
-                                        <br /><br /><br />
-                                        <span class="skill">Stacks : </span>
-                                        Angular
-                                    </p>
-                                    <br /><br /><br />
-                                    <h4 class="btn">
-                                        <a
-                                            href="https://deyvesdion-pokedex-app.netlify.app/pokemons"
-                                            >Voir plus ...</a
-                                        >
-                                    </h4>
-                                </div>
-                                <div class="items">
-                                    <div class="item projet4"></div>
-                                    <h1>Tilda Agency</h1>
-                                    <p class="description">
-                                        Site web d'une startUp Parisienne
-                                        <br /><br />
-                                        <span class="skill">Stacks : </span>
-                                        Vue.js
-                                    </p>
+                <!-- Réalisation contain -->
+                <div id="realisation" class="realisation">
+                    <h1 class="title">Réalisations</h1>
+                    <p style="text-align: center; margin: 30px 0px">
+                        Pour voir +22 projets, visitez mon profil
+                        <a
+                            target="_blank"
+                            href="http://https://github.com/DeyvesDion"
+                            >GitHub : DeyvesDION</a
+                        >
+                        ou mon profil
+                        <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/de-yves-dion/"
+                            >LinkedIn : De Yves DION</a
+                        >
+                    </p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="card">
+                                <div class="card1"></div>
+                                <h1>Aasgard</h1>
+                                <p class="description">
+                                    Site internet du vendeur de poël Aasgard (En
+                                    cours)
                                     <br /><br /><br /><br />
-                                    <h4 class="btn">
-                                        <a
-                                            href="https://deyvesdion-agence-web.netlify.app/"
-                                            >Voir plus ...</a
-                                        >
-                                    </h4>
-                                </div>
-                            </div>
-                            <!---------------------------------------- row2 --------------------------------->
-                            <div class="row">
-                                <div class="items">
-                                    <div class="item projet5"></div>
-                                    <h1>festival de cinéma</h1>
-                                    <p class="description">
-                                        Site internet du festival de pein air,
-                                        organisé au parc Monceau à Paris.
-                                        <br />
-                                        <span class="skill">Stacks : </span>
-                                        Vue.js - Bootstrap
-                                    </p>
-                                    <br /><br />
-                                    <h4 class="btn">
-                                        <a
-                                            href="https://deyvesdion-festival-de-cinema.netlify.app/"
-                                            >Voir plus ...</a
-                                        >
-                                    </h4>
-                                </div>
-                                <div class="items">
-                                    <div class="item projet6"></div>
-                                    <h1>Express Food</h1>
-                                    <p class="description">
-                                        Base de données d'une start-up pour une
-                                        application de restauration en ligne
-                                        <br /><br />
-                                        <span class="skill">Stacks : </span>
-                                        UML - MySql
-                                    </p>
-                                    <br /><br />
-                                    <h4 class="btn">
-                                        <a
-                                            href="https://deyvesdion-expressfood.netlify.app/"
-                                            >Voir plus ...</a
-                                        >
-                                    </h4>
-                                </div>
+                                    <span class="skill">Stacks : </span>
+                                    Html/Css - JavaScript
+                                </p>
+                                <br /><br /><br />
 
-                                <div class="items">
-                                    <div class="item projet2"></div>
-                                    <h1>Générateur de citations</h1>
-                                    <p class="description">
-                                        Permet de génerer des citations
-                                        aléatoirement à partir de différents
-                                        morceaux de phrases.
-                                        <br /><br />
-                                        <span class="skill">Stacks : </span>
-                                        Bootstrap - JavaScript
-                                    </p>
-                                    <br />
-                                    <h4 class="btn">
-                                        <a
-                                            href="https://deyvesdion-generateur-citations.netlify.app/"
-                                            >Voir plus ...</a
-                                        >
-                                    </h4>
-                                </div>
-
-                                <div class="items">
-                                    <div class="item projet8"></div>
-                                    <h1>Jeu de tour par tour</h1>
-                                    <p class="description">
-                                        Jeu dans lequel chaque joueur met une
-                                        stratégie en place pour être la reine du
-                                        royaume
-                                        <br /><br />
-                                        <span class="skill">Stacks : </span>
-                                        Javascript - Bootstrap
-                                    </p>
-                                    <br />
-                                    <h4 class="btn">
-                                        <a
-                                            href="https://deyvesdion-jeu-de-tour.netlify.app/"
-                                            >Voir plus ...</a
-                                        >
-                                    </h4>
-                                </div>
+                                <a
+                                    class="btn"
+                                    target="_blank"
+                                    href="https://deyvesdion-aasgard.netlify.app/"
+                                    >Voir plus ...</a
+                                >
                             </div>
-                            <!------------------------ for more project view my Git ------------------------>
-                            <p
-                                style="
-                                    text-align: center;
-                                    margin: 30px 0px;
-                                    line-height: 40px;
-                                "
-                            >
-                                Pour voir +22 projets, visitez mon profil
-                                <a href="https://github.com/DeyvesDion"
-                                    >GitHub : DeyvesDION</a
-                                >
-                                ou mon profil
+                            <div class="card">
+                                <div class="card2"></div>
+                                <h1>Festival de pein air</h1>
+                                <p class="description">
+                                    Site internet du festival de pein air,
+                                    organisé au parc Monceau à Paris.
+                                    <br /><br /><br />
+                                    <br />
+                                    <span class="skill">Stacks : </span>
+                                    Bootstrap
+                                </p>
+                                <br /><br /><br />
+
                                 <a
-                                    href="https://www.linkedin.com/in/de-yves-dion/"
-                                    >LinkedIn : De Yves DION</a
-                                >, pourquoi pas
-                                <a
-                                    href="https://drive.google.com/file/d/1g0J-ATyotC1NIuFQIXgeNTd13Ol-uHdk/view?usp=sharing"
-                                    >mon CV ?</a
+                                    class="btn"
+                                    target="_blank"
+                                    href="https://deyvesdion-festival-de-film.netlify.app/"
+                                    >Voir plus ...</a
                                 >
-                            </p>
+                            </div>
+                            <div class="card">
+                                <div class="card3"></div>
+                                <h1>Pokedex</h1>
+                                <p class="description">
+                                    Liste des pokémons
+                                    <br /><br /><br /><br /><br /><br />
+                                    <span class="skill">Stacks : </span>
+                                    Angular
+                                </p>
+                                <br /><br /><br />
+
+                                <a
+                                    class="btn"
+                                    target="_blank"
+                                    href="https://deyvesdion-pokedex-app.netlify.app/pokemons"
+                                    >Voir plus ...</a
+                                >
+                            </div>
+                            <div class="card">
+                                <div class="card4"></div>
+                                <h1>Tilda Agency</h1>
+                                <p class="description">
+                                    Site web d'une startUp Parisienne
+                                    <br /><br /><br /><br />
+                                    <span class="skill">Stacks : </span>
+                                    Vue.js
+                                </p>
+                                <br /><br /><br /><br />
+
+                                <a
+                                    class="btn"
+                                    target="_blank"
+                                    href="https://deyvesdion-agence-web.netlify.app/"
+                                    >Voir plus ...</a
+                                >
+                            </div>
+                            <div class="card">
+                                <div class="card5"></div>
+                                <h1>festival de cinéma</h1>
+                                <p class="description">
+                                    Site internet du festival de pein air,
+                                    organisé au parc Monceau à Paris.
+                                    <br /><br /><br /><br />
+                                    <span class="skill">Stacks : </span>
+                                    Vue.js - Bootstrap
+                                </p>
+                                <br /><br /><br />
+
+                                <a
+                                    target="_blank"
+                                    class="btn"
+                                    href="https://deyvesdion-festival-de-cinema.netlify.app/"
+                                    >Voir plus ...</a
+                                >
+                            </div>
+                            <div class="card">
+                                <div class="card6"></div>
+                                <h1>Express Food</h1>
+                                <p class="description">
+                                    Base de données d'une start-up pour une
+                                    application de restauration en ligne
+                                    <br /><br /><br />
+                                    <span class="skill">Stacks : </span>
+                                    UML - MySql
+                                </p>
+                                <br /><br /><br />
+
+                                <a
+                                    target="_blank"
+                                    class="btn"
+                                    href="https://deyvesdion-expressfood.netlify.app/"
+                                    >Voir plus ...</a
+                                >
+                            </div>
+                            <div class="card">
+                                <div class="card7"></div>
+                                <h1>Générateur de citations</h1>
+                                <p class="description">
+                                    Permet de génerer des citations
+                                    aléatoirement.
+                                    <br /><br /><br />
+                                    <span class="skill">Stacks : </span>
+                                    Bootstrap - JavaScript
+                                </p>
+                                <br /><br />
+
+                                <a
+                                    target="_blank"
+                                    class="btn"
+                                    href="https://deyvesdion-generateur-citations.netlify.app/"
+                                    >Voir plus ...</a
+                                >
+                            </div>
+                            <div class="card">
+                                <div class="card8"></div>
+                                <h1>Jeu de tour par tour</h1>
+                                <p class="description">
+                                    Jeu dans lequel chaque joueur met une
+                                    stratégie en place pour être la reine du
+                                    royaume
+                                    <br /><br />
+                                    <span class="skill">Stacks : </span>
+                                    Javascript - Bootstrap
+                                </p>
+                                <br />
+                                <a
+                                    target="_blank"
+                                    class="btn"
+                                    href="https://deyvesdion-jeu-de-tour.netlify.app/"
+                                    >Voir plus ...</a
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!------------------------ Expérience professionnelle ------------------------>
-                <div class="experience" style="margin: 40px 0">
-                    <div class="experience">
-                        <div class="experience-contain">
-                            <h1
-                                class="experience-title"
-                                style="
-                                    text-align: center;
-                                    font-weight: bold;
-                                    font-size: 40px;
-                                    margin-bottom: 20px;
-                                "
-                            >
-                                Expérience professionnelle
-                            </h1>
-                            <div class="timeline">
-                                <div class="container right">
-                                    <div class="content">
-                                        <h2>Depuis octobre 2021</h2>
+                <!-- Expérience Pro contain -->
+
+                <div id="experience" class="experience">
+                    <h1 class="title">Expériences pro</h1>
+                    <div class="container">
+                        <!-- Time Line -->
+
+                        <div class="timeline-section">
+                            <div class="timeline-items">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">
+                                        Dépuis octobre 2021
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h3>
+                                            Développeur VueJs - Angular à Whoz
+                                        </h3>
                                         <p>
-                                            <span style="font-weight: bold"
-                                                >Développeur VueJs - Angular à
-                                                Whoz </span
-                                            ><br />
                                             <span>
-                                                - Création de nouveaux écrans<br />
-                                                - Amélioration de features front
-                                                existantes
+                                                📌 Création de nouveaux
+                                                écrans<br />
+                                                📌 Amélioration de features
+                                                front existantes
                                                 <br />
-                                                - Conception de nouveaux
+                                                📌 Conception de nouveaux
                                                 components
                                                 <br />
-                                                - Participation à l’amélioration
-                                                de l’UX-UI avec l’équipe
-                                                Produit<br />
-                                                - Proposition de solutions
+                                                📌 Participation à
+                                                l’amélioration de l’UX-UI avec
+                                                l’équipe Produit<br />
+                                                📌 Proposition de solutions
                                                 techniques et veille
                                                 technologique<br />
                                             </span>
                                         </p>
                                     </div>
                                 </div>
-                                <div class="container left">
-                                    <div class="content">
-                                        <h2>Mars 2019 - Septembre 2021</h2>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">
+                                        Mars 2019 - Septembre 2021
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h3>Webmaster à MediaLink Network</h3>
                                         <p>
-                                            <span style="font-weight: bold"
-                                                >Webmaster à MediaLink Network </span
-                                            ><br />
                                             <span>
-                                                - Développement de sites
-                                                internet sous le CMS WordPress
-                                                et JavaScript (VueJs 2)<br />
-                                                - Création des différentes
-                                                fonctionnalités des sites
-                                                internet<br />
-                                                - Mise à jour des
-                                                fonctionnalités et plugins
-                                                WordPress<br />
-                                                - Assurer la maintenabilité et
-                                                le bon fonctionnement des
-                                                sites<br />
-                                                - Livraison du code source
-                                                documenté<br />
-                                                - Conception et implémentation
-                                                de nouvelles fonctionnalités<br />
-                                                - Configuration serveur et
-                                                gestion de base de données<br />
-                                                - Optimisation continue de la
-                                                performance des sites (SEO,
-                                                poids des images, la fluidité
-                                                d’affichage, le temps de
-                                                chargement et l’expérience
-                                                utilisateur en général)<br />
-                                                - Participer à la rédaction des
-                                                documentations techniques<br />
+                                                📌 Création de nouveaux
+                                                écrans<br />
+                                                📌 Amélioration de features
+                                                front existantes
+                                                <br />
+                                                📌 Conception de nouveaux
+                                                components
+                                                <br />
+                                                📌 Participation à
+                                                l’amélioration de l’UX-UI avec
+                                                l’équipe Produit<br />
+                                                📌 Proposition de solutions
+                                                techniques et veille
+                                                technologique<br />
                                             </span>
                                         </p>
                                     </div>
                                 </div>
-                                <div class="container right">
-                                    <div class="content">
-                                        <h2>Septembre 2019 - Mars 2020</h2>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">
+                                        Septembre 2019 - Mars 2020
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h3>
+                                            Vendeur fruits et légumes à Monoprix
+                                        </h3>
                                         <p>
-                                            <span style="font-weight: bold"
-                                                >Vendeur fruits et légumes à
-                                                Monoprix </span
-                                            ><br />
                                             <span>
-                                                - Vérifier le bon fonctionnement
-                                                du rayon des fruits et
-                                                légumes<br />
-                                                - Réceptionner et vérifier les
-                                                produits
-                                                <br />
-                                                - Préparer des présentoirs pour
+                                                📌 Vérifier le bon
+                                                fonctionnement du rayon des
+                                                fruits et légumes<br />
+                                                📌 Réceptionner et vérifier les
+                                                produits<br />
+                                                📌 Préparer des présentoirs pour
                                                 mettre en valeur les fruits et
                                                 légumes <br />
-                                                - Informer les clients sur les
+                                                📌 Informer les clients sur les
                                                 produits
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Services contain -->
+                <div id="service" class="service">
+                    <h1 class="title">Mes services</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="service-contain">
+                                <h3>Développement Front</h3>
+                                <p>
+                                    Html5/Css3 - Sass - Bootstrap - WordPress -
+                                    JavaScript- jQuery- Angular - Vue.js
+                                </p>
+                            </div>
+
+                            <div class="service-contain">
+                                <h3>Développement Front</h3>
+                                <p>MySQL - Firebase</p>
+                            </div>
+
+                            <div class="service-contain">
+                                <h3>Développement Front</h3>
+                                <p>UML - Merise</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formation contain -->
+
+                <div id="formation" class="formation">
+                    <h1 class="title">Mes formations</h1>
+                    <div class="container">
+                        <!-- Time Line -->
+
+                        <div class="timeline-section">
+                            <div class="timeline-items">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2020</div>
+                                    <div class="timeline-content">
+                                        <h3>
+                                            OPENCLASSROOMS : Développeur
+                                            d’applications Front-End
+                                        </h3>
+                                        <p>
+                                            <span>
+                                                Html5/Css3 - JavaScript- Vue.js
+                                                - jQuery - Bootstrap - Sass -
+                                                WordPress
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2016</div>
+                                    <div class="timeline-content">
+                                        <h3>
+                                            LEGACY INSTITUTE : Licence
+                                            Professionnelle Génie Informatique
+                                        </h3>
+                                        <p>
+                                            <span>
+                                                Html5/Css3 - JavaScript - jQuery
+                                                - Php - Java - MySQL - Merise -
+                                                UML
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2013</div>
+                                    <div class="timeline-content">
+                                        <h3>
+                                            INSTITUT LKM : Baccalauréat général
+                                        </h3>
+                                        <p>
+                                            <span>
+                                                Science de la vie et de la terre
+                                                - Mathématique - Science
+                                                physique - Biologie -
+                                                Informatique bureautique
                                             </span>
                                         </p>
                                     </div>
@@ -425,129 +471,12 @@
                     </div>
                 </div>
 
-                <!------------------------ Education ------------------------>
-                <div class="education">
-                    <div class="education-contain">
-                        <h1 class="education-title">Formations</h1>
-                        <div class="timeline">
-                            <div class="container left">
-                                <div class="content">
-                                    <h2>2020</h2>
-                                    <p>
-                                        <span style="font-weight: bold"
-                                            >OPENCLASSROOMS : Développeur
-                                            d’applications Front-End </span
-                                        ><br />
-                                        <span>
-                                            - Développement Front-End : HTML5,
-                                            CSS3, JavaScript, Vue.js, jQuery,
-                                            Bootstrap, Sass, WordPress <br />
-                                            - Analyse et conception : UML
-                                            <br />
-                                            Base de donnés : MySQL
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="container right">
-                                <div class="content">
-                                    <h2>2016</h2>
-                                    <p>
-                                        <span style="font-weight: bold"
-                                            >LEGACY INSTITUTE : Licence
-                                            Professionnelle Génie
-                                            Informatique</span
-                                        ><br />
-                                        <span>
-                                            - Développement web : HTML5, CSS3,
-                                            JavaScript, jQuery<br />
-                                            - Analyse et conception : MERISE,
-                                            UML
-                                            <br />
-                                            - Base de donnés : MySQL <br />
-                                            - Programation orientée objet : PHP,
-                                            Java
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="container left">
-                                <div class="content">
-                                    <h2>2013</h2>
-                                    <p>
-                                        <span style="font-weight: bold"
-                                            >INSTITUT LKM : Baccalauréat
-                                            général</span
-                                        ><br />
-                                        <span>
-                                            - Science de la vie et de la
-                                            terre<br />
-                                            - Mathématique
-                                            <br />
-                                            - Science physique
-                                            <br />
-                                            - Biologie <br />
-                                            - Informatique bureautique
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Contact contain -->
             </div>
         </main>
         <!---------------------------------------- footer --------------------------------->
-        <footer class="footer">
-            <!------------------------ for more project view my Git ------------------------>
-            <p style="text-align: center; margin: 30px 0px; line-height: 40px">
-                Pour voir +22 projets, visitez mon profil
-                <a href="https://github.com/DeyvesDion">GitHub : DeyvesDION</a>
-                ou mon profil
-                <a href="https://www.linkedin.com/in/de-yves-dion/"
-                    >LinkedIn : De Yves DION</a
-                >
-                <!-- <br />
-                Pour info je mange toujours des céréales 😃🥣 -->
-            </p>
-            <div
-                class="flag"
-                style="
-                    margin: 0 auto;
-                    width: 50%;
-                    text-align: center;
-                    margin-bottom: 3px;
-                "
-            >
-                <button
-                    style="padding: 1px 12px; margin-bottom: 5px"
-                    title="Télécharger mon CV Français"
-                    class="btnDownload"
-                    type="submit"
-                >
-                    <a
-                        href="https://drive.google.com/file/d/1s67Uwqx848fYgv8wk9VsF6CHiTUiRdFn/view?usp=sharing"
-                        >Mon CV version 🇫🇷</a
-                    >
-                </button>
-                <button
-                    style="padding: 1px 12px"
-                    title="Télécharger mon CV Canadien"
-                    class="btnDownload"
-                    type="submit"
-                >
-                    <a
-                        href="https://drive.google.com/file/d/1s67Uwqx848fYgv8wk9VsF6CHiTUiRdFn/view?usp=sharing"
-                        >Mon CV version 🇨🇦</a
-                    >
-                </button>
-            </div>
-            <h3 style="text-align: center; margin-bottom: 5px">
-                Stack : HTML5/CSS3 - JavaScript
-                <br />
-                Made by De Yves DION with ❤️
-            </h3>
-        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="./asset/js/script.js"></script>
     </body>
 </html>
