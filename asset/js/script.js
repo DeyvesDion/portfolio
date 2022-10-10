@@ -1,3 +1,17 @@
+
+window.addEventListener("scroll", () => {
+    // fonction menu sticky
+    const header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+// Afficher les liens du menu
+function toggleMobilMenu() {
+    const menu = document.querySelector(".menu");
+    menu.classList.toggle("MobilMenu");
+}
+
+
 let typed = new Typed(".auto-type", {
     strings: [
         "Développeur Angular - Vue.js",
@@ -8,8 +22,3 @@ let typed = new Typed(".auto-type", {
     backSpeed: 70,
     loop: true,
 })
-window.addEventListener("scroll", () => {
-    // fonction menu sticky
-    const header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
-});
