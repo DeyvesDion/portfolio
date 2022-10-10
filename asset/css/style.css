@@ -15,7 +15,10 @@
     background-repeat: no-repeat;
 }
 
-body {
+.realisation,
+.formation,
+.service,
+.formation {
     overflow-x: hidden;
 }
 
@@ -149,6 +152,7 @@ main .container .banner {
 }
 
 .banner .neumorphism3 {
+    z-index: -1;
     position: absolute;
     height: 200px;
     width: 200px;
@@ -494,6 +498,8 @@ main .service .container {
 
 main .service .container .row {
     width: 90%;
+    height: auto;
+    overflow-x: hidden;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -504,11 +510,12 @@ main .service .container .row {
 
 .service .container .row .service-contain {
     height: 200px;
-    width: 350px;
+    width: 30%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background: rgb(90, 120, 205);
     background: linear-gradient(71deg, rgba(90, 120, 205, 0.23339758266587884) 0%, rgba(255, 88, 60, 0.5779353977919293) 99%);
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -518,6 +525,7 @@ main .service .container .row {
 
 .service .container .row .service-contain:hover {
     transform: scale(1.03);
+
 }
 
 .service .container .row .service-contain h3 {
@@ -562,10 +570,85 @@ main .formation .container {
     height: auto;
 }
 
+
+/* Contact contain style*/
+main .contact {
+    width: 100%;
+    padding-top: 80px;
+    height: auto;
+}
+
+main .contact .title {
+    text-align: center;
+    font-size: 50px;
+    color: #6a5acd;
+}
+
+main .contact .title::after {
+    content: "";
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    background: 50%/contain url(../img/Megaphones.gif) no-repeat;
+}
+
+main .contact .container {
+    width: 100%;
+    height: auto;
+}
+
 /* Media Query */
 
-/* commancé ici le lundi */
 
+@media (min-width: 15px) and (max-width: 572px) {
+    header {
+        padding: 0 10px;
+    }
+
+    header .logo {
+        font-size: 15px;
+    }
+
+    header .hamburger,
+    header .cv {
+        display: block;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 15px) and (max-width: 647px) {
+    .banner {
+        overflow-x: hidden;
+    }
+
+    .banner .banner-txt h1 {
+        font-size: 25px;
+    }
+
+    .banner .banner-txt h2 span {
+        font-size: 30px;
+    }
+
+    .banner .neumorphism {
+        height: 150px;
+        width: 150px;
+        top: 50px;
+        right: 309px;
+    }
+
+    .banner .neumorphism2 {
+        top: 10px;
+        left: 250px;
+    }
+
+    .banner .neumorphism3 {
+        height: 150px;
+        width: 150px;
+        top: 470px;
+        right: 209px;
+    }
+
+}
 
 @media screen and (max-width: 1066px) {
 
@@ -626,11 +709,89 @@ main .formation .container {
     .menu.MobilMenu li a {
         font-size: 18px;
         color: #000;
+        text-decoration: underline;
+    }
+
+    .written {
+        display: none;
+    }
+}
+
+@media (min-width: 545px) and (max-width: 1066px) {
+
+    main .realisation .container .row {
+        flex-wrap: wrap;
+    }
+
+    main .realisation .container .row .card {
+        /* justify-content: center; */
+    }
+}
+
+@media (min-width: 366px) and (max-width: 1128px) {
+
+    /* Services */
+    .service .container .row {
+        flex-wrap: wrap;
+        align-items: center !important;
+        justify-content: space-evenly !important;
+    }
+
+    .service .container .row .service-contain {
+        justify-content: start;
+        width: 90%;
+        margin: 5px;
+    }
+
+    .service .container .row .service-contain h3 {
+        font-weight: 400;
+        margin-bottom: 20px;
+
+    }
+
+}
+
+@media (min-width: 10px) and (max-width: 366px) {
+    .service .container .row .service-contain {
+        height: 200px;
+
     }
 }
 
 
+@media (min-width: 10px) and (max-width: 545px) {
+    main .realisation .container .row .card {
+        width: 98%;
+    }
 
+    main .realisation .title::after {
+        display: none;
+    }
+
+    main .experience .title::after {
+        display: none;
+    }
+
+    main .service .title::after {
+        display: none;
+    }
+
+    main .formation .title::after {
+        display: none;
+    }
+
+    main .realisation .title,
+    main .experience .title,
+    main .service .title,
+    main .formation .title {
+        font-size: 40px;
+    }
+
+    main .service .container .row .service-contain {
+        width: 100%;
+        margin: 10px;
+    }
+}
 
 
 
