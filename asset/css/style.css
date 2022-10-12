@@ -599,6 +599,12 @@ main .contact .linkedin img {
     margin: 4px;
 }
 
+main .contact .linkedin .gmail {
+    height: 30px;
+    width: 40px;
+    margin: 4px;
+}
+
 main .contact .linkTitle {
     text-align: center;
     font-size: 20px;
@@ -631,7 +637,6 @@ main .contact .container {
     height: auto;
     padding: 30px;
     margin: 0 auto;
-    /* background-color: #6a5acd; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -764,10 +769,6 @@ main .contact .container {
 
     main .realisation .container .row {
         flex-wrap: wrap;
-    }
-
-    main .realisation .container .row .card {
-        /* justify-content: center; */
     }
 }
 
