@@ -277,6 +277,7 @@ main .realisation .container .row .card {
     height: 350px;
     border-radius: 20px;
     margin-bottom: 30px;
+    margin-right: 1px;
     padding: 20px;
     text-align: center;
     background: rgb(90, 120, 205);
@@ -574,7 +575,7 @@ main .formation .container {
 /* Contact contain style*/
 main .contact {
     width: 100%;
-    padding-top: 80px;
+    /* padding-top: 80px; */
     height: auto;
 }
 
@@ -582,6 +583,39 @@ main .contact .title {
     text-align: center;
     font-size: 50px;
     color: #6a5acd;
+}
+
+main .contact .linkedin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+main .contact .linkedin img {
+    height: 30px;
+    width: 30px;
+    margin: 4px;
+}
+
+main .contact .linkTitle {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: -6px;
+}
+
+main .contact .linkedin .call {
+    /* text-align: center; */
+    font-size: 15px;
+    color: #6a5acd;
+    margin-bottom: -8px;
+}
+
+@media (min-width: 15px) and (max-width: 409px) {
+    main .contact .linkedin .call {
+        font-size: 12px;
+    }
 }
 
 main .contact .title::after {
@@ -595,6 +629,15 @@ main .contact .title::after {
 main .contact .container {
     width: 100%;
     height: auto;
+    padding: 30px;
+    margin: 0 auto;
+    /* background-color: #6a5acd; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
 }
 
 /* Media Query */
