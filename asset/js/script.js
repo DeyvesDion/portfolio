@@ -15,6 +15,7 @@ function toggleMobilMenu() {
 let typed = new Typed(".auto-type", {
     strings: [
         "Développeur Angular - Vue.js",
+        "Développeur Power Platform",
         "Webmaster",
         "Intégrateur Web"
     ],
