@@ -171,12 +171,12 @@ main .container .banner {
 
 main .container .banner .handwritten {
     z-index: -1;
-    /* position: absolute; */
+    position: relative;
     color: #6a5acd;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
-    /* bottom: 100px;
-    right: 410px; */
+    top: 100px;
+    /* right: 410px; */
     transform: translate(-50%, -50%) rotate(-5deg);
     background-size: 120px;
     background-image: url(../img/primary-circle.svg);
